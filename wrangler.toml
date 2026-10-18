@@ -1,3 +1,7 @@
 name = "egmore"
 compatibility_date = "2025-10-19"
-pages_build_output_dir = "."
+
+# Static site served via Workers Static Assets (works with `wrangler deploy`).
+[assets]
+directory = "./"
+not_found_handling = "single-page-application"
